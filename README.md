@@ -1,16 +1,90 @@
-# AI-Powered Nutrition & Diet Recommendation System
+🧠 AI-Powered Nutrition & Diet Recommendation System
+📋 Overview
 
-This is a complete DL project (submission-ready) built as a single-file Streamlit web app with helper modules.
-It provides an **AI-like** recommendation engine (heuristic + lightweight scoring) and a polished UI.
+The AI-Powered Nutrition and Diet Recommendation System is an intelligent web application that provides personalized meal and diet plans based on user details such as age, gender, height, weight, and fitness goals.
+It uses machine learning and deep learning algorithms to analyze user data and generate a customized diet that helps users maintain, gain, or lose weight in a healthy way.
 
-## What’s included
-- `app.py` — Streamlit web app (UI + prediction logic)
-- `utils.py` — helper functions (scoring, meal-plan templates)
-- `requirements.txt` — Python packages (optional: Streamlit)
-- `README_RUN_PUSH.md` — Detailed instructions to run locally in VS Code and push to GitHub
-- `LICENSE` — MIT license
+🚀 Features
 
-## How this works (short)
-- The frontend is a Streamlit app (`app.py`) you can run with `streamlit run app.py`.
-- The "AI" uses a scoring model implemented in `utils.py` that combines user inputs to output a diet category and a 7-day sample meal plan. It is deterministic but designed to be easily replaceable by a trained ML model (hooks provided).
+✅ AI-based personalized diet recommendations
+✅ User-friendly Streamlit web interface
+✅ Dynamic BMI and calorie calculations
+✅ Nutrition analysis based on macro & micro nutrients
+✅ Data visualization of diet plans and progress
+✅ FastAPI backend for efficient API handling
 
+🛠️ Tech Stack
+Component	Technology Used
+Frontend	Streamlit
+Backend	FastAPI
+Machine Learning	Python (Scikit-learn, TensorFlow, or custom model)
+Database	SQLite / CSV
+Deployment	GitHub / LocalHost
+⚙️ Installation & Setup
+🧩 1. Clone the Repository
+git clone https://github.com/indumathi-27/AI_diet_recommendation.git
+cd AI_diet_recommendation
+
+🧩 2. Create Virtual Environment
+python -m venv venv
+
+🧩 3. Activate Virtual Environment
+
+Windows (PowerShell)
+
+venv\Scripts\activate
+
+
+Mac / Linux
+
+source venv/bin/activate
+
+🧩 4. Install Requirements
+pip install -r requirements.txt
+
+🧩 5. Run the Backend (FastAPI)
+uvicorn app:app --reload
+
+🧩 6. Run the Frontend (Streamlit)
+
+In another terminal window:
+
+streamlit run utils.py
+
+
+Your app will now be live at
+👉 http://localhost:8501/
+
+💡 How It Works
+
+User enters details (age, gender, height, weight, activity level, goals).
+
+Model predicts ideal calorie and nutrient intake.
+
+System generates AI-based meal and diet plan.
+
+User can visualize nutrition breakdown and track daily progress.
+
+🧮 Sample Input & Output
+
+Input:
+
+Age: 22
+
+Gender: Female
+
+Height: 160 cm
+
+Weight: 55 kg
+
+Goal: Maintain Weight
+
+Output:
+
+Recommended Calories: ~2000 kcal/day
+
+Breakfast: Oats with fruits & milk
+
+Lunch: Brown rice, dal, and salad
+
+Dinner: Grilled vegetables with chapati
